@@ -11,4 +11,6 @@ See examples directory for further clues.
 
 - [x] write PoC
 - [ ] add `include` instruction
+- [ ] add namespacing
+- [ ] add url helpers
 - [ ] append **more tasks** here
