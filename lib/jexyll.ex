@@ -1,18 +1,18 @@
 defmodule Jexyll do
-  @moduledoc """
-  Documentation for Jexyll.
-  """
+  @moduledoc false
 
-  @doc """
-  Hello world.
+  def start(config_file \\ "jexyll.json") do
+    config = config(config_file)
 
-  ## Examples
+    config
+    |> get_in(~w/site src_dir/)
+    |> File.ls!
+  end
 
-      iex> Jexyll.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  defp config(config_file) do
+    config_file
+    |> Path.absname()
+    |> File.read!()
+    |> Jason.decode!()
   end
 end
