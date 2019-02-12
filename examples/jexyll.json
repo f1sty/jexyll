@@ -1,0 +1,17 @@
+{
+    "author": {
+        "name": "Yurii Skrynnykov",
+        "email": "f1st@pm.me"
+    },
+    "site": {
+        "env": [
+            { "header": "Testing my parser" },
+            { "footer": "Footer goes here" }
+        ],
+        "format": "markdown",
+        "src_dir": "src",
+        "build_dir": "build",
+        "theme": "default",
+        "skip": "src/drafts"
+    }
+}
